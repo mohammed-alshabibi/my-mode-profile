@@ -15,8 +15,8 @@ export default function About() {
           </p>
 
           <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
-            I have a strong foundation in computer science and real-world experience developing software that’s both
-            scalable and maintainable. Whether I’m coding front-end UI or building backend logic, I focus on clarity,
+            I have a strong foundation in computer science and real-world experience developing software thats both
+            scalable and maintainable. Whether I am coding front-end UI or building backend logic, I focus on clarity,
             efficiency, and reusability.
           </p>
 

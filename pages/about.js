@@ -4,7 +4,7 @@ export default function About() {
       <div className="max-w-4xl mx-auto text-center">
         <h1 className="text-5xl font-extrabold mb-6">About Me</h1>
         <p className="text-xl text-gray-600 dark:text-gray-300 mb-12 max-w-3xl mx-auto">
-          I'm <span className="font-semibold dark:text-white">Mohammed Alshabibi</span>, a software developer
+          I am <span className="font-semibold dark:text-white">Mohammed Alshabibi</span>, a software developer
           who turns ideas into clean, functional, and user-focused experiences.
         </p>
 
@@ -22,7 +22,7 @@ export default function About() {
 
           <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
             Outside of tech, I love exploring new tools, contributing to open source on GitHub, and constantly growing
-            as a problem-solver. I'm always eager to take on new challenges and stay up to date with the latest in
+            as a problem-solver. I am always eager to take on new challenges and stay up to date with the latest in
             development trends.
           </p>
         </div>

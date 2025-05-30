@@ -9,6 +9,7 @@ import {
   FaLinkedin,
 } from 'react-icons/fa';
 import { SiFlutter, SiFirebase } from 'react-icons/si';
+import Link from 'next/link';
 
 export default function Home() {
   const skills = [
@@ -36,7 +37,8 @@ export default function Home() {
 
         {/* Hero */}
         <h1 className="text-4xl sm:text-5xl font-extrabold mb-2">
-          Hi, I’m Mohammed Alshabibi
+          Hi, I am Mohammed Alshabibi
+
         </h1>
         <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
           A passionate developer building clean and modern web experiences.
@@ -62,12 +64,12 @@ export default function Home() {
 
         {/* CTA */}
         <div className="mt-10">
-          <a
+          <Link
             href="/projects"
             className="inline-block bg-gray-800 text-white dark:bg-white dark:text-black px-6 py-2 rounded hover:opacity-90 transition"
           >
             View All Projects →
-          </a>
+          </Link>
         </div>
 
         {/* Social Media Icons */}

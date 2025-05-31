@@ -1,8 +1,10 @@
 'use client';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 export default function Header() {
+    const router = useRouter();
   const [darkMode, setDarkMode] = useState(false);
 
     useEffect(() => {
@@ -16,14 +18,26 @@ export default function Header() {
       root.style.setProperty('--foreground', '#ededed');
     }
   }, [darkMode]);
-
+  const navLinks = [
+    { name: 'Home', path: '/' },
+    { name: 'About', path: '/about' },
+    { name: 'Projects', path: '/projects' },
+    { name: 'Contact', path: '/contact' },
+  ];
   return (
     <header className="bg-gray-800 text-white p-4 flex justify-between items-center">
       <nav className="flex gap-6">
-        <Link href="/">Home</Link>
-        <Link href="/about">About</Link>
-        <Link href="/projects">Projects</Link>
-        <Link href="/contact">Contact</Link>
+        {navLinks.map((link) => (
+          <Link
+            key={link.path}
+            href={link.path}
+            className={`hover:underline transition ${
+              router.pathname === link.path ? 'text-yellow-400 font-semibold' : ''
+            }`}
+          >
+            {link.name}
+          </Link>
+        ))}
       </nav>
       <button
         onClick={() => setDarkMode(!darkMode)}

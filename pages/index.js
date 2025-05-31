@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { useState } from 'react';
 import GitHubProjects from '../components/GitHubProjects';
 import {
   FaJs,
@@ -40,7 +41,7 @@ export default function Home() {
           Hi, I am Mohammed Alshabibi
 
         </h1>
-        <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+        <p className="text-lg text-gray-600 dark:text-gray-650 mb-8">
           A passionate developer building clean and modern web experiences.
         </p>
 
@@ -53,7 +54,7 @@ export default function Home() {
                 <div className="flex justify-center mb-1 transition-transform duration-300 group-hover:scale-110">
                   {skill.icon}
                 </div>
-                <p className="text-sm text-gray-700 dark:text-gray-300">{skill.name}</p>
+                <p className="text-sm text-gray-700 dark:text-gray-550">{skill.name}</p>
               </div>
             ))}
           </div>
@@ -64,13 +65,16 @@ export default function Home() {
 
         {/* CTA */}
         <div className="mt-10">
-          <Link
-            href="/projects"
-            className="inline-block bg-gray-800 text-white dark:bg-white dark:text-black px-6 py-2 rounded hover:opacity-90 transition"
-          >
-            View All Projects →
-          </Link>
-        </div>
+  <Link
+    href="/projects"
+    className="inline-block group bg-gray-900 text-white dark:bg-white dark:text-black px-6 py-2 rounded border border-transparent dark:border-black hover:shadow-lg hover:scale-105 transition transform"
+  >
+    <span className="inline-flex items-center gap-1">
+      View All Projects
+      <span className="transform transition-transform duration-300 group-hover:translate-x-1">→</span>
+    </span>
+  </Link>
+</div>
 
         {/* Social Media Icons */}
         <div className="mt-6 flex justify-center gap-6">
@@ -78,7 +82,7 @@ export default function Home() {
             href="https://github.com/mohammed-alshabibi"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-600 dark:text-gray-300 hover:text-black dark: hover:text-black transition-transform transform hover:scale-125"
+            className="text-gray-600 dark:text-gray-500 hover:text-black dark: hover:text-gray-600 transition-transform transform hover:scale-125"
           >
             <FaGithub size={28} />
           </a>
@@ -86,7 +90,7 @@ export default function Home() {
             href="https://linkedin.com/in/mohammed-alshabibi-839199320"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-white transition-transform transform hover:scale-125"
+            className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-900 transition-transform transform hover:scale-125"
           >
             <FaLinkedin size={28} />
           </a>

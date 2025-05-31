@@ -3,8 +3,8 @@ export default function About() {
     <main className="min-h-screen px-6 py-20 bg-[var(--background)] text-[var(--foreground)] transition-colors duration-300">
       <div className="max-w-4xl mx-auto text-center">
         <h1 className="text-5xl font-extrabold mb-6">About Me</h1>
-        <p className="text-xl text-gray-600 dark:text-gray-300 mb-12 max-w-3xl mx-auto">
-          I am <span className="font-semibold dark:text-white">Mohammed Alshabibi</span>, a software developer
+        <p className="text-xl text-gray-600 dark:text-gray-500 mb-12 max-w-3xl mx-auto">
+          I am <span className="font-semibold ">Mohammed Alshabibi</span>, a software developer
           who turns ideas into clean, functional, and user-focused experiences.
         </p>
 
